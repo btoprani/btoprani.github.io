@@ -23,7 +23,7 @@ const ContactItem = styled.a`
     display: flex;
     flex-direction: row;
     color: ${themeColors.neutralLight};
-    font-family: "Poppins", sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     gap: 20px;
     align-items: center;
     text-decoration: none;

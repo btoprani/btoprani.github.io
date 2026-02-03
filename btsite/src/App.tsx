@@ -5,8 +5,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Amigurumate from './pages/Amigurumate';
 import JCrew from './pages/JCrew';
-import Zyno from './pages/Zyno';
 import "yet-another-react-lightbox/styles.css";
+import Cisco from './pages/Cisco';
 
 export default function App() {
     return (
@@ -16,7 +16,7 @@ export default function App() {
                 <Route path='about' element={<About />} />
                 <Route path='amigurumate' element={<Amigurumate />} />
                 <Route path='jcrew' element={<JCrew />} />
-                <Route path='zyno' element={<Zyno />} />
+                <Route path='cisco' element={<Cisco />} />
             </Routes>
         </BrowserRouter>
     );

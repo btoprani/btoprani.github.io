@@ -36,7 +36,7 @@ export const Subheader = styled.h3`
 `;
 
 export const BodyText = styled.span`
-    font-family: 'Poppins', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -133,10 +133,11 @@ export const HeroText = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    gap: 20px;
 `;
 
 export const Subtitle = styled.h3`
-    font-family: 'Poppins', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
     font-size: 32px;
     line-height: 41.6px;
@@ -148,6 +149,7 @@ export const LogoImage = styled.img`
     width: 50%;
     height: auto;
     align-self: center;
+    margin: 24px 0;
     @media(max-width: 1200px) {
         width: 100%;
     }

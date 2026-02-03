@@ -115,7 +115,7 @@ const PullQuote = styled.span`
 const HMWList = styled.ul`
     margin: 0;
     li {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'IBM Plex Sans', sans-serif;
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;

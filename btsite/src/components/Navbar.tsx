@@ -159,9 +159,9 @@ const DesktopLinks = () => {
                 <DropdownButton onClick={() => setDropdownOpen(!dropdownOpen)} $open={dropdownOpen}>Case Studies</DropdownButton>
                 {dropdownOpen &&
                     <Submenu>
+                        <Link to='/cisco'>Cisco</Link>
                         <Link to='/amigurumate'>Amigurumate</Link>
                         <Link to='/jcrew'>J.Crew</Link>
-                        <Link to='/zyno'>Zyno</Link>
                     </Submenu>}
             </LinkLi>
             <LinkLi>

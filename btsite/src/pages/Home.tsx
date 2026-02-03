@@ -9,9 +9,9 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const amigurumateHeroSrc = require("../assets/Amigurumate/AmiMobileMockup1.webp");
 const jcrewHeroSrc = require("../assets/JCrew/JCrewMockup.webp");
-const zynoLogoSrc = require("../assets/Zyno/LogoWordmark.svg").default;
-const ZynoHeroSrc = require("../assets/Zyno/ZynoMockup.webp");
 const amiLogoSrc = require("../assets/Amigurumate/SidewaysWordmark.webp");
+const ciscoLogoSrc = require("../assets/Cisco/CiscoLogo.svg").default;
+const ciscoHeroSrc = require("../assets/Cisco/Screen.png");
 
 const Content = styled.div`
     padding: 60px calc((100vw - 20px) / 6 + 20px);
@@ -148,6 +148,15 @@ const Home = () => {
                 <Content>
                     <H1>Bhaven Toprani</H1>
                     <H2>UX Developer skilled in bridging the gap between Design and Software with a focus on Consumer Experience</H2>
+                    <Link to='/cisco'>
+                        <Card>
+                            <TextContainer>
+                                <ImgLogo src={ciscoLogoSrc} alt='Cisco Logo' />
+                                <CardBody>A Home Page and New User flow designed in 160 hours.</CardBody>
+                            </TextContainer>
+                            <CardImg src={ciscoHeroSrc} alt='CiscoHero' />
+                        </Card>
+                    </Link>
                     <Link to='/amigurumate'>
                         <Card>
                             <TextContainer>
@@ -164,15 +173,6 @@ const Home = () => {
                                 <CardBody>A Droplist Feature Add designed for JCrew in 75 hours.</CardBody>
                             </TextContainer>
                             <CardImg src={jcrewHeroSrc} alt='J.Crew Hero' />
-                        </Card>
-                    </Link>
-                    <Link to='/zyno'>
-                        <Card>
-                            <TextContainer>
-                                <ImgLogo src={zynoLogoSrc} alt='Zyno Logo' />
-                                <CardBody>A Mobile Website and App designed for Zyno in 65 hours.</CardBody>
-                            </TextContainer>
-                            <CardImg src={ZynoHeroSrc} alt='Zyno Hero' />
                         </Card>
                     </Link>
                 </Content>

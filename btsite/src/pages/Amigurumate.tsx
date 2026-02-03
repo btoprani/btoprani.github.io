@@ -73,7 +73,7 @@ const AmigurumateHeroText = styled(HeroText)`
 `;
 
 const AmigurumateSubtitle = styled(Subtitle)`
-    font-family: 'Rosario', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     color: ${AmigurumateColors.neutralDark};
 `;
 

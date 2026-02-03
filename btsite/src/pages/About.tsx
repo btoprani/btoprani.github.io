@@ -38,7 +38,7 @@ const Content = styled.div`
 const Text = styled.span`
     color: ${themeColors.neutralLight};
     width: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     @media(max-width: 1200px) {
         max-width: 100%;
     }

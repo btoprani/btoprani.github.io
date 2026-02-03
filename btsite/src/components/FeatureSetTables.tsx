@@ -16,6 +16,7 @@ const zynoStyle = css`
 
 const FeatureSetTable = styled.table<{$borderColor: string, $caseStudyType: CaseStudyType}>`
     border-collapse: collapse;
+    font-family: 'IBM Plex Sans', sans-serif;
     width: 100%;
     text-align: left;
     border-radius: 4px;

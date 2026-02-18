@@ -8,7 +8,7 @@ Chart.register(ArcElement, Tooltip, Legend);
 
 //Pie title haha
 const Pietle = styled.span`
-    font-family: '', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
     font-size: 16px;
     max-width: 300px;

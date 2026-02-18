@@ -10,7 +10,7 @@ const amigurumateStyle = css`
     background-color: #DADDF2;
 `;
 
-const zynoStyle = css`
+const ciscoStyle = css`
     background-color: #EFBC9D;
 `;
 
@@ -30,7 +30,7 @@ const FeatureSetTable = styled.table<{$borderColor: string, $caseStudyType: Case
     tr:nth-child(even) {
         ${props => (props.$caseStudyType===CaseStudyType.JCrew && jCrewStyle)}
         ${props => (props.$caseStudyType===CaseStudyType.Amigurumate && amigurumateStyle)}
-        ${props => (props.$caseStudyType===CaseStudyType.Zyno && zynoStyle)}
+        ${props => (props.$caseStudyType===CaseStudyType.Cisco && ciscoStyle)}
     }
     tr:nth-child(2n+3) {
         background-color: ${themeColors.neutralLight};
@@ -142,66 +142,34 @@ const JCrewData: FeatureSetDataType = {
         }]
 };
 
-const ZynoData: FeatureSetDataType = {
+const CiscoData: FeatureSetDataType = {
     1: [{
-            name: "Link",
-            description: "Ability to link listing profile"
+            name: "New User Flow",
+            description: "Guiding Users in getting started with Intersight"
         },
         {
-            name: "Crawl",
-            description: "Ability to automatically crawl listings"
+            name: "Home Page",
+            description: "Ability to get a quick snapshot of changes and useful information"
         },
         {
-            name: "Account",
-            description: "Users should have an account"
-        },
-        {
-            name: "AI integration",
-            description: "AI integration to generate posts"
-        },
-        {
-            name: "One Click",
-            description: "One Click approval and submission of generated posts"
+            name: "Recents and Favorites",
+            description: "Ability to reach common and custom pages and actions quickly"
         }],
     2: [{
-            name: "Edit",
-            description: "Ability to edit post text"
-        },
-        {
-            name: "Asset Management",
-            description: "Ability to change which Video/Images are used from listing page"
-        },
-        {
-            name: "Upload Assets",
-            description: "Ability to replace post assets with uploaded ones"
+            name: "AI Integration",
+            description: "Deep integration of in-development AI to solve problems and give insights"
         }],
     3: [{
-            name: "Analytics",
-            description: "Ability to view Analytics on posts"
-        },
-        {
-            name: "AI Tours",
-            description: "AI generated video house tours"
-        },
-        {
-            name: "Scheduling",
-            description: "Users can choose posting times"
+            name: "Page Customizability",
+            description: "Ability to move widgets around the page to fit user preference"
         }],
     4: [{
-            name: "Pricing Tiers",
-            description: "Users should be able to have more features available to them at higher pricing tiers"
+            name: "Custom Widgets",
+            description: "Ability pick from a list of custom widgets and add them"
         },
         {
-            name: "Hours Saved",
-            description: "Tally of hours saved by using service"
-        },
-        {
-            name: "Tuned Models",
-            description: "Multiple AI models that fit different marketing strategies"
-        },
-        {
-            name: "Articles",
-            description: "Articles on what kinds of posts are generating the most engagement"
+            name: "Granular and custom reporting",
+            description: "Improve reporting by customizing it to the client and user"
         }]
 };
 
@@ -220,8 +188,8 @@ export const FeatureSet = (props: FeatureSetType) => {
         case CaseStudyType.JCrew:
             data = JCrewData;
             break;
-        case CaseStudyType.Zyno:
-            data = ZynoData;
+        case CaseStudyType.Cisco:
+            data = CiscoData;
             break;
         default:
             data=AmigurumateData;

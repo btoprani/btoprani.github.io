@@ -73,7 +73,7 @@ export const Title = styled(H1)`
 export enum CaseStudyType {
     Amigurumate,
     JCrew,
-    Zyno
+    Cisco
 }
 
 export const Competitors = styled.div`

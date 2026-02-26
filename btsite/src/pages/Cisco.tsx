@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import styled from "styled-components";
-import { bgText, conclusionText, earlyStageWireframesText, featureSetText, finalIterationText, HMW1, HMW2, midStageWireframesText, problemStatementText1, prototypeText, researchBullet1, researchBullet2, researchText1, researchText2, usabilityTestingText, userTestingText } from "../components/CiscoContent";
+import { bgText, conclusionText, earlyStageWireframesText, featureSetText1, featureSetText1Bold1, featureSetText1P2, finalIterationText, HMW1, HMW2, midStageWireframesText, problemStatementBold1, problemStatementText1, problemStatementText1P2, prototypeText, researchBold1, researchBullet1, researchBullet2, researchText1, researchText1P2, researchText2, usabilityTestingBold1, usabilityTestingText1, usabilityTestingText1P2, userTestingBold1, userTestingText1, userTestingText1P2 } from "../components/CiscoContent";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Lightbox, { Slide } from "yet-another-react-lightbox";
 import { Zoom } from "yet-another-react-lightbox/plugins";
-import { BodyText, DemoImg, HeroSection, HeroText, LogoImage, SectionTitle, Subtitle, themeColors } from "../components/SharedStyles";
+import { BodyText, CaseStudyType, DemoImg, HeroSection, HeroText, LogoImage, SectionTitle, Subtitle, themeColors } from "../components/SharedStyles";
 import { FinalIterationWireframes, LofiWireframes, MidStageWireframes } from "../components/CiscoWireframes";
 import { Footer } from "../components/Footer";
+import { FeatureSet } from "../components/FeatureSetTables";
+import { UsabilityTestingCharts } from "../components/CiscoCharts";
 
 const ciscoLogoSrc = require("../assets/Cisco/CiscoLogo.svg").default;
 const ciscoHeroSrc = require("../assets/Cisco/Screen.png");
@@ -66,12 +68,6 @@ const PageContent = styled.div`
     gap: 40px;
     img {
         cursor: pointer;
-    }
-    .competitors svg {
-        max-height: 100px;
-        width: auto;
-        max-width: 200px;
-        min-height: 50px;
     }
     .boldText {
         font-weight: 700;
@@ -140,27 +136,29 @@ export default function Cisco() {
                 <BodyText>{bgText}</BodyText>
                 <CiscoH2>Research</CiscoH2>
                 <BodyText>
-                    {researchText1}
+                    {researchText1}<span className='boldText'>{researchBold1}</span>{researchText1P2}
                     <ol>
                         <li>{researchBullet1}</li>
                         <li>{researchBullet2}</li>
                     </ol>
                     {researchText2}
                 </BodyText>
-                <BodyText>{problemStatementText1}</BodyText>
+                <BodyText>{problemStatementText1}<span className='boldText'>{problemStatementBold1}</span>{problemStatementText1P2}</BodyText>
                 <HMWList>
                     <li>{HMW1}</li>
                     <li>{HMW2}</li>
                 </HMWList>
-                <BodyText>{featureSetText}</BodyText>
+                <BodyText>{featureSetText1}<span className='boldText'>{featureSetText1Bold1}</span>{featureSetText1P2}</BodyText>
+                <FeatureSet headerColor={CiscoColors.neutralLight} headerBgColor={CiscoColors.primary} caseStudyType={CaseStudyType.Cisco} />
                 <CiscoH2>Early-Stage Wireframes</CiscoH2>
                 <BodyText>{earlyStageWireframesText}</BodyText>
                 <LofiWireframes openLightbox={openLightbox} />
-                <BodyText>{userTestingText}</BodyText>
+                <BodyText>{userTestingText1}<span className='boldText'>{userTestingBold1}</span>{userTestingText1P2}</BodyText>
                 <CiscoH2>Iterations</CiscoH2>
                 <BodyText>{midStageWireframesText}</BodyText>
                 <MidStageWireframes openLightbox={openLightbox} />
-                <BodyText>{usabilityTestingText}</BodyText>
+                <BodyText>{usabilityTestingText1}<span className='boldText'>{usabilityTestingBold1}</span>{usabilityTestingText1P2}</BodyText>
+                <UsabilityTestingCharts />
                 <CiscoH2>High-Fidelity Prototype</CiscoH2>
                 <BodyText>{prototypeText}</BodyText>
                 <a href="https://www.figma.com/proto/t6JFBSi68csuYk9wFZu2fs/ISPLAT-16104-Intersight-Landing-Page?page-id=23%3A2228&node-id=620-41367&p=f&viewport=1722%2C1108%2C0.13&t=cWZ2UGdZSRdqb3B8-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=620%3A41367&show-proto-sidebar=1">
